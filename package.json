@@ -8,7 +8,9 @@
   "author": "Ali Nagy <alinagy50@gmail.com>",
   "private": true,
   "scripts": {
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "quasar build",
+    "deploy": "now"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

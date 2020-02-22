@@ -61,6 +61,7 @@ module.exports = function (ctx) {
       gzip: false,
       analyze: false,
       rtl: true,
+      distDir: ctx.mode.spa ? 'public' : null,
       // Options below are automatically set depending on the env, set them if you want to override
       // preloadChunks: false,
       // extractCSS: false,
