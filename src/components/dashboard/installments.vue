@@ -3,11 +3,11 @@
     <q-card flat bordered>
       <q-item>
         <q-item-section avatar>
-          <q-avatar icon="mdi-truck-outline" size="64px" />
+          <q-avatar icon="mdi-account-cash-outline" size="64px" />
         </q-item-section>
         <q-item-section>
-          <q-item-label class="text-h5">المصروفات المستحقة</q-item-label>
-          <q-item-label class="text-subtitle1 text-weight-thin">التي قرب موعد سدادها</q-item-label>
+          <q-item-label class="text-h5">الأقساط المستحقة</q-item-label>
+          <q-item-label class="text-subtitle1 text-weight-thin">التي قرب موعد استلامها</q-item-label>
         </q-item-section>
       </q-item>
       <q-separator />
@@ -15,7 +15,7 @@
         <q-item dense>
           <q-item-section>
             <q-item-label header>
-              المورد
+              العميل
             </q-item-label>
           </q-item-section>
           <q-item-section>
@@ -25,14 +25,14 @@
           </q-item-section>
           <q-item-section>
             <q-item-label lines="1" header>
-              تاريخ السداد
+              تاريخ الاستلام
             </q-item-label>
           </q-item-section>
         </q-item>
         <q-item v-ripple dense clickable v-for="(supplier, index) in suppliers" :key="index">
           <q-item-section>
             <q-item-label class="text-subtitle1">
-              {{ supplier.supplier}}
+              {{ supplier.client}}
             </q-item-label>
           </q-item-section>
           <q-item-section>
@@ -56,10 +56,10 @@
 
 <script>
 export default {
-  name: "loans",
+  name: "installments",
   computed: {
     suppliers: function(){
-      return this.$store.state.alerts.upcomingSupplierPayments;
+      return this.$store.state.alerts.upcomingInstallments;
     }
   }
 }

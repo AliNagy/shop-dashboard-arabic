@@ -1,18 +1,35 @@
 export default function () {
   return {
-    latestTransactions: [
+    latestTransactions: [],
+    upcomingSupplierPayments: [
       {
-        id: "43",
-        amount: 400,
-        details: "بيع 6 قطع من الصنف القولاني",
-        income: true,
-        client: "",
-        date: "18/2/2020 الثلاثاء",
-        time: "08:25 صباحا"
+        id: 50,
+        supplier: "المتحدة لأي حاجة",
+        amount: 300,
+        payment_date: "28/02/2020"
+      },
+      {
+        id: 51,
+        supplier: "شركة أ",
+        amount: 1200,
+        payment_date: "13/03/2020"
+      },
+      {
+        id: 52,
+        supplier: "المحرك م",
+        amount: 1234,
+        payment_date: "19/04/2020"
       }
     ],
-    upcomingLoanPayments: [],
-    upcomingInstallments: [],
+    upcomingInstallments: [
+      {
+        id: 10,
+        client: "عبدو موتا",
+        amount: 1000,
+        payment_date: "20/03/2020",
+
+      }
+    ],
     inventoryAlert: []
   }
 }
