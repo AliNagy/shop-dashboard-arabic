@@ -8,7 +8,9 @@
   "author": "Ali Nagy <alinagy50@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "quasar dev"
+    "dev": "quasar dev",
+    "store": "quasar new store",
+    "page": "quasar new page"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

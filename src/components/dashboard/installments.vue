@@ -3,7 +3,7 @@
     <q-card flat bordered>
       <q-item>
         <q-item-section avatar>
-          <q-avatar icon="mdi-account-cash-outline" size="64px" />
+          <q-avatar icon="mdi-account-cash" size="64px" />
         </q-item-section>
         <q-item-section>
           <q-item-label class="text-h5">الأقساط المستحقة</q-item-label>
