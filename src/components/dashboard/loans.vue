@@ -11,7 +11,11 @@
         </q-item-section>
       </q-item>
       <q-separator />
-      <q-list class="q-pa-xs text-primary text-center" >
+      <q-card-actions class="q-my-lg" v-if="!suppliers.length" vertical align="center" >
+        <div>لا توجد حاليا أية مصروفات مستحقة.</div>
+        <q-btn flat label="أنقر هنا لرؤية جميع مصروفات." color="primary"/>
+      </q-card-actions>
+      <q-list v-else class="q-pa-xs text-primary text-center" >
         <q-item dense>
           <q-item-section>
             <q-item-label header>
@@ -47,7 +51,7 @@
           </q-item-section>
         </q-item>
       </q-list>
-      <q-card-actions>
+      <q-card-actions v-if="suppliers.length">
         <q-btn flat color="primary" icon-right="mdi-chevron-double-left" label="المزيد"/>
       </q-card-actions>
     </q-card>

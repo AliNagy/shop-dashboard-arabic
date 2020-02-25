@@ -11,7 +11,11 @@
         </q-item-section>
       </q-item>
       <q-separator />
-      <q-list class="q-pa-xs text-primary text-center" >
+      <q-card-actions class="q-my-lg" v-if="!clients.length" vertical align="center" >
+        <div>لا توجد حاليا أية أقساط مستحقة.</div>
+        <q-btn flat label="أنقر هنا لرؤية جميع الأقساط." color="primary"/>
+      </q-card-actions>
+      <q-list v-else class="q-pa-xs text-primary text-center" >
         <q-item dense>
           <q-item-section>
             <q-item-label header>
@@ -29,25 +33,25 @@
             </q-item-label>
           </q-item-section>
         </q-item>
-        <q-item v-ripple dense clickable v-for="(supplier, index) in suppliers" :key="index">
+        <q-item v-ripple dense clickable v-for="(client, index) in clients" :key="index">
           <q-item-section>
             <q-item-label class="text-subtitle1">
-              {{ supplier.client}}
+              {{ client.client}}
             </q-item-label>
           </q-item-section>
           <q-item-section>
             <q-item-label class="text-subtitle1">
-              {{ supplier.amount }} جنية
+              {{ client.amount }} جنية
             </q-item-label>
           </q-item-section>
           <q-item-section>
             <q-item-label class="text-subtitle1">
-              {{ supplier.payment_date }}
+              {{ client.payment_date }}
             </q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
-      <q-card-actions>
+      <q-card-actions v-if="clients.length">
         <q-btn flat color="primary" icon-right="mdi-chevron-double-left" label="المزيد"/>
       </q-card-actions>
     </q-card>
@@ -58,7 +62,7 @@
 export default {
   name: "installments",
   computed: {
-    suppliers: function(){
+    clients: function(){
       return this.$store.state.alerts.upcomingInstallments;
     }
   }
