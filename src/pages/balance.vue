@@ -1,11 +1,11 @@
 <template>
-  <q-page padding>
-    <!-- content -->
+  <q-page>
+    <div class="row q-pa-md text-h4 text-primary">رصيد الخزنة</div>
   </q-page>
 </template>
 
 <script>
 export default {
-  // name: 'PageName',
-}
+   name: 'balance',
+};
 </script>
