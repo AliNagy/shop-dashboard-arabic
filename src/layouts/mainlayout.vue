@@ -23,7 +23,7 @@
               </q-item-label>
             </q-item-section>
           </q-item>
-          <q-item inset-level="0.3" dense v-if="link.children" v-for="(child, index) in link.children" :key="index" clickable v-ripple :to="child.link">
+          <q-item inset-level="0.3" dense v-for="(child, index) in link.children" :key="index" clickable v-ripple :to="child.link">
             <q-item-section avatar>
               <q-avatar icon="mdi-subdirectory-arrow-left"/>
             </q-item-section>
@@ -41,7 +41,7 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view class="bg-grey-2" />
+      <router-view  class="bg-grey-2" />
     </q-page-container>
   </q-layout>
 </template>
@@ -55,7 +55,6 @@ export default {
   },
   computed: {
     navigationMenu: function(){
-      console.log(this.$store.state.navigationMenu)
       return this.$store.state.global.navigationMenu
     }
   }

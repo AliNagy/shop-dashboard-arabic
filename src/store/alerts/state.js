@@ -29,6 +29,14 @@ export default function () {
       //   payment_date: "20/03/2020",
       // }
     ],
-    inventoryAlert: []
+    inventoryAlert: [
+      // {
+      //   name: "iPhone X",
+      //   supplier: "Apple"
+      // }
+    ],
+    notifications: [
+
+    ]
   }
 }
