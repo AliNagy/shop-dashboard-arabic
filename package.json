@@ -10,7 +10,9 @@
   "scripts": {
     "dev": "quasar dev",
     "store": "quasar new store",
-    "page": "quasar new page"
+    "page": "quasar new page",
+    "build": "quasar build",
+    "deploy": "now"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
