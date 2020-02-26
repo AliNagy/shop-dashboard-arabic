@@ -3,6 +3,7 @@ import Vuex from 'vuex'
 
 import alerts from './alerts'
 import global from './global'
+import receipts from './receipts'
 
 Vue.use(Vuex)
 
@@ -18,7 +19,7 @@ Vue.use(Vuex)
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      alerts, global
+      alerts, receipts, global
     },
 
     // enable strict mode (adds overhead!)
