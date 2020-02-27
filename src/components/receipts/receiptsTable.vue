@@ -1,6 +1,6 @@
 <template>
     <div>
-        <q-card class="row q-my-md">
+        <q-card flat bordered class="row q-mb-md">
             <q-card-section class="col-md col-12">
                 <q-input dense standout="bg-primary text-white" debounce="300" v-model="filter" placeholder="بحث">
                     <template v-slot:append>
@@ -28,6 +28,11 @@
             </q-card-section>
         </q-card>
         <q-table :filter="filter" separator="horizontal" flat bordered :columns="columns" :data="getReceipts">
+            <template v-slot:no-data>
+                <div class="full-width row flex-center text-grey-9 text-h6 q-py-xl">
+                    لا توجد أية فواتير بيع.
+                </div>
+            </template>
         </q-table>
     </div>
 </template>
