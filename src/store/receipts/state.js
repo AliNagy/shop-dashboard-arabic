@@ -1,9 +1,11 @@
 export default function () {
   return {
+    fromDate: "",
+    toDate: "",
     receipts: [
       {
         id: 0,
-        date: "20/02/2020",
+        date: "2020/02/20",
         total: 400,
         discount: 20,
         net_total: 380,
@@ -11,10 +13,10 @@ export default function () {
       },
       {
         id: 1,
-        date: "20/02/2020",
-        total: 400,
-        discount: 20,
-        net_total: 380,
+        date: "2020/01/02",
+        total: 1200,
+        discount: 0,
+        net_total: 1200,
         state: "تم التسديد"
       }
     ],
