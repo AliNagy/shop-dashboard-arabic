@@ -28,8 +28,11 @@
             </q-card-section>
         </q-card>
         <q-table :filter="filter" separator="horizontal" flat bordered :columns="columns" :data="getReceipts">
+            <template v-slot:top="props">
+                <q-btn flat round dense :icon="props.inFullscreen?'mdi-fullscreen-exit':'mdi-fullscreen'" @click="props.toggleFullscreen"/>
+            </template>
             <template v-slot:no-data>
-                <div class="full-width row flex-center text-grey-9 text-h6 q-py-xl">
+                <div class="fit row flex-center text-grey-9 text-h6 q-py-xl">
                     لا توجد أية فواتير بيع.
                 </div>
             </template>

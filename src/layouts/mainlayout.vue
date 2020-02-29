@@ -3,7 +3,7 @@
     <q-header bordered class="bg-white text-brandtext">
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="right = !right" />
-        <q-toolbar-title>المخزان والمبيعات</q-toolbar-title>
+        <q-toolbar-title>المخازن والمبيعات</q-toolbar-title>
       </q-toolbar>
     </q-header>
 

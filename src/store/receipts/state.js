@@ -68,7 +68,7 @@ export default function () {
         label: 'تاريخ الفاتورة',
         field: 'date',
         sortable: true,
-        sort: (a, b) => {},
+        sort: (a, b) => { return new Date(b) - new Date(a) },
         headerClasses: "bg-primary text-white",
         classes: "text-grey-9",
         align: "center"

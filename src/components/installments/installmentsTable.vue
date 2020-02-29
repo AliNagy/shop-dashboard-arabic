@@ -9,13 +9,13 @@
                 </q-input> 
             </q-card-section>
         </q-card>
-        <q-table :filter="filter" separator="horizontal" flat bordered :columns="columns" :data="getClients">
+        <q-table :filter="filter" separator="horizontal" flat bordered :columns="columns" :data="getInstallments">
             <template v-slot:top="props">
                 <q-btn flat round dense :icon="props.inFullscreen?'mdi-fullscreen-exit':'mdi-fullscreen'" @click="props.toggleFullscreen"/>
             </template>
             <template v-slot:no-data>
                 <div class="full-width row flex-center text-grey-9 text-h6 q-py-xl">
-                    لا يوجد أي عملاء.
+                    لا توجد أيه أقساط.
                 </div>
             </template>
         </q-table>
@@ -26,7 +26,7 @@
 import { mapGetters } from 'vuex'
 
 export default {
-    name: "clientsTable",
+    name: "installmentsTable",
     data: function(){
         return({
             filter: ""
@@ -34,10 +34,10 @@ export default {
     },
     computed: {
         columns: function(){
-            return this.$store.state.clients.columns
+            return this.$store.state.installments.columns
         },
-        getClients: function(){
-            return this.$store.state.clients.clients
+        getInstallments: function(){
+            return this.$store.state.installments.installments
         }
     }
 }
