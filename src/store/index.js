@@ -6,6 +6,7 @@ import global from './global'
 import receipts from './receipts'
 import clients from './clients'
 import installments from './installments'
+import inventory from './inventory'
 
 Vue.use(Vuex)
 
@@ -21,7 +22,7 @@ Vue.use(Vuex)
 export default function (/* { ssrContext } */) {
   const Store = new Vuex.Store({
     modules: {
-      alerts, receipts, clients, installments, global
+      alerts, receipts, clients, installments, inventory, global
     },
 
     // enable strict mode (adds overhead!)

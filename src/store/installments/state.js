@@ -18,6 +18,12 @@ export default function () {
         name: "كريم وجدو",
         address: "بيروح في 20 دقيقة",
         amount: 1000
+      },
+      {
+        id: "01111111233",
+        name: "علي نمبر وان",
+        address: "الواحة",
+        amount: 90000
       }
     ],
     columns: [
