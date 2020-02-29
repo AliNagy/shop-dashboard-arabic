@@ -57,11 +57,11 @@ export default function () {
       },
       {
         name: 'amount',
-        label: 'المبلغ المتبقي',
+        label: 'المبلغ المتبقي (جنية)',
         field: 'amount',
         sortable: true,
         headerClasses: "bg-primary text-white",
-        classes: "text-grey-9",
+        classes: "text-grey-10 bg-grey-3",
         align: "center"
       }
     ]

@@ -97,7 +97,7 @@ export default function () {
         field: 'net_total',
         sortable: true,
         headerClasses: "bg-primary text-white",
-        classes: "text-grey-10 bg-grey-3 text-weight-bold",
+        classes: "text-grey-10 bg-grey-3",
         align: "center"
       },
       {

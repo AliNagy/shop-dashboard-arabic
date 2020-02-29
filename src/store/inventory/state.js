@@ -49,11 +49,11 @@ export default function () {
       },
       {
         name: 'total_value',
-        label: 'اجمالي تكلفة المنتج',
+        label: 'اجمالي تكلفة المنتج (جنية)',
         field: 'total_value',
         sortable: true,
         headerClasses: "bg-primary text-white",
-        classes: "text-grey-10 bg-grey-3 text-weight-bold",
+        classes: "text-grey-10 bg-grey-3",
         align: "center"
       }
     ]
