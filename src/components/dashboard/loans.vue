@@ -6,14 +6,14 @@
           <q-avatar icon="mdi-truck" size="64px" />
         </q-item-section>
         <q-item-section>
-          <q-item-label class="text-h5">المصروفات المستحقة</q-item-label>
+          <q-item-label class="text-h5">ديون الموردين</q-item-label>
           <q-item-label class="text-subtitle1 text-weight-thin">التي قرب موعد سدادها</q-item-label>
         </q-item-section>
       </q-item>
       <q-separator />
       <q-card-actions class="q-my-lg" v-if="!suppliers.length" vertical align="center" >
-        <div>لا توجد حاليا أية مصروفات مستحقة.</div>
-        <q-btn flat label="أنقر هنا لرؤية جميع مصروفات." color="primary"/>
+        <div>لا توجد حاليا أية ديون مستحقة.</div>
+        <q-btn to="/suppliers" flat label="أنقر هنا لرؤية جميع الديون." color="primary"/>
       </q-card-actions>
       <q-list v-else class="q-pa-xs text-primary text-center" >
         <q-item dense>

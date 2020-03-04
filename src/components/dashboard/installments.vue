@@ -13,7 +13,7 @@
       <q-separator />
       <q-card-actions class="q-my-lg" v-if="!clients.length" vertical align="center" >
         <div>لا توجد حاليا أية أقساط مستحقة.</div>
-        <q-btn flat label="أنقر هنا لرؤية جميع الأقساط." color="primary"/>
+        <q-btn to="/installments" flat label="أنقر هنا لرؤية جميع الأقساط." color="primary"/>
       </q-card-actions>
       <q-list v-else class="q-pa-xs text-primary text-center" >
         <q-item dense>

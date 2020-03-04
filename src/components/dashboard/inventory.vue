@@ -6,14 +6,14 @@
           <q-avatar icon="mdi-dolly" size="64px" />
         </q-item-section>
         <q-item-section>
-          <q-item-label class="text-h5">البضائع</q-item-label>
+          <q-item-label class="text-h5">الأصناف</q-item-label>
           <q-item-label class="text-subtitle1 text-weight-thin">التي أوشك نفاذها</q-item-label>
         </q-item-section>
       </q-item>
       <q-separator />
       <q-card-actions class="q-my-lg" v-if="!inventory.length" vertical align="center" >
-        <div>لا توجد حاليا أية بضائع قاربت النفاذ.</div>
-        <q-btn flat label="أنقر هنا لرؤية جميع البضائع." color="primary"/>
+        <div>لا توجد حاليا أية أصناف قاربت النفاذ.</div>
+        <q-btn to="/inventory" flat label="أنقر هنا لرؤية جميع الأصناف." color="primary"/>
       </q-card-actions>
       <q-list v-else class="q-pa-xs text-primary text-center" >
         <q-item dense>
