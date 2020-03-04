@@ -17,12 +17,12 @@
                 </q-input>
                 <q-btn class="q-mt-sm" color="primary" flat label="تحديد من">
                     <q-popup-proxy ref="dateFromFilter" transition-show="scale" transition-hide="scale">
-                        <q-date :options="getFromDateOptions" :value="getFromDate" @input = "handleFromDate" today-btn first-day-of-week="7" subtitle="من"/>
+                        <q-date :options="getFromDateOptions" :value="getFromDate" @input = "handleFromDate" first-day-of-week="7" subtitle="من"/>
                     </q-popup-proxy>
                 </q-btn>  
                 <q-btn class="q-mt-sm" color="primary" flat label="تحديد الى">
                     <q-popup-proxy ref="dateToFilter" transition-show="scale" transition-hide="scale">
-                        <q-date :options="getToDateOptions" :value="getToDate" @input = "handleToDate" today-btn first-day-of-week="7" subtitle="الى"/>
+                        <q-date :options="getToDateOptions" :value="getToDate" @input = "handleToDate" first-day-of-week="7" subtitle="الى"/>
                     </q-popup-proxy>
                 </q-btn>  
             </q-card-section>
