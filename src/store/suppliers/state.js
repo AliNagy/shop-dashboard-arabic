@@ -1,6 +1,13 @@
 export default function () {
   return {
     suppliers: [
+      // {
+      //   name: string,
+      //   address: string,
+      //   phone: string,
+      //   tax_id: string,
+      //   total_amount_owed: number
+      // }
     ],
     columns: [
       {

@@ -1,10 +1,10 @@
 export default function () {
   return {
     balance: [
-      {
-        account: "المتحركة",
-        balance: 34000
-      }
+      // {
+      //   account: string,
+      //   balance: number
+      // }
     ],
     columns: [
       {

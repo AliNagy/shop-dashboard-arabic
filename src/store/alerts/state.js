@@ -3,36 +3,24 @@ export default function () {
     latestTransactions: [],
     upcomingSupplierPayments: [
       // {
-      //   id: 50,
-      //   supplier: "المتحدة لأي حاجة",
-      //   amount: 300,
-      //   payment_date: "28/02/2020"
-      // },
-      // {
-      //   id: 51,
-      //   supplier: "شركة أ",
-      //   amount: 1200,
-      //   payment_date: "13/03/2020"
-      // },
-      // {
-      //   id: 52,
-      //   supplier: "المحرك م",
-      //   amount: 1234,
-      //   payment_date: "19/04/2020"
+      //   id: number,
+      //   supplier: string,
+      //   amount: number,
+      //   payment_date: string
       // }
     ],
     upcomingInstallments: [
       // {
-      //   id: 10,
-      //   client: "عبدو موتا",
-      //   amount: 1000,
-      //   payment_date: "20/03/2020",
+      //   id: number,
+      //   client: string,
+      //   amount: number,
+      //   payment_date: string,
       // }
     ],
     inventoryAlert: [
       // {
-      //   name: "iPhone X",
-      //   supplier: "Apple"
+      //   name: string,
+      //   supplier: string
       // }
     ],
     notifications: [

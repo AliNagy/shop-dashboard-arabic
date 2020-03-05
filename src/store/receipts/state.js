@@ -4,52 +4,12 @@ export default function () {
     toDate: "",
     receipts: [
       {
-        id: 0,
-        date: "2020/02/20",
-        total: 400,
-        discount: 20,
-        net_total: 380,
-        state: "تم التسديد"
-      },
-      {
-        id: 1,
-        date: "2020/01/02",
-        total: 1200,
-        discount: 0,
-        net_total: 1200,
-        state: "تم التسديد"
-      },
-      {
-        id: 2,
-        date: "2020/02/02",
-        total: 850,
-        discount: 150,
-        net_total: 700,
-        state: "تم التسديد"
-      },
-      {
-        id: 3,
-        date: "2020/01/20",
-        total: 9000,
-        discount: 0,
-        net_total: 9001,
-        state: "تم التسديد"
-      },
-      {
-        id: 4,
-        date: "2020/01/21",
-        total: 1200,
-        discount: 0,
-        net_total: 1200,
-        state: "تم التسديد"
-      },
-      {
-        id: 5,
-        date: "2020/01/02",
-        total: 350,
-        discount: 0,
-        net_total: 350,
-        state: "تم التسديد"
+        // id: number,
+        // date: string,
+        // total: number,
+        // discount: number,
+        // net_total: number,
+        // state: string
       }
     ],
     columns: [

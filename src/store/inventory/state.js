@@ -1,13 +1,13 @@
 export default function () {
   return {
     inventory: [
-      {
-        type: "foods",
-        detailed_type: "long-lasting canned foods",
-        product_name: "Foul Medames",
-        quantity: 50,
-        total_value: 3000
-      }
+      // {
+      //   type: string,
+      //   detailed_type: string,
+      //   product_name: string,
+      //   quantity: number,
+      //   total_value: number
+      // }
     ],
     columns: [
       {

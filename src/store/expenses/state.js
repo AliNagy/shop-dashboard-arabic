@@ -3,12 +3,12 @@ export default function () {
     fromDate: "",
     toDate: "",
     expenses: [
-      {
-        amount: 150,
-        name: 'Ali',
-        details: 'مواصلات',
-        date: '2020/02/02'
-      }
+      // {
+      //   amount: number,
+      //   name: string,
+      //   details: string,
+      //   date: string
+      // }
     ],
     columns: [
       {
