@@ -10,6 +10,7 @@ import inventory from './inventory'
 import balance from './balance'
 import suppliers from './suppliers'
 import expenses from './expenses'
+import informatics from './informatics'
 
 Vue.use(Vuex)
 
@@ -33,6 +34,7 @@ export default function (/* { ssrContext } */) {
       balance, 
       suppliers, 
       expenses, 
+      informatics,
       global
     },
 
