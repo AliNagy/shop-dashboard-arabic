@@ -1,4 +1,4 @@
-# Shop Dashboard (shop-dashboard)
+# Shop Dashboard [ARABIC] (shop-dashboard)
 
 Dashboard for handling day to day business.
 
